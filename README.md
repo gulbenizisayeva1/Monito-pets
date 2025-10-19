@@ -1,4 +1,3 @@
-
 🐾 Monito Pets
 A responsive pet adoption website built to practice front-end development.
 🛠 Tech Stack
