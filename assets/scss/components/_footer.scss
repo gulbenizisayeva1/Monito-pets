@@ -1,0 +1,123 @@
+@use "../pages/variables" as *;
+
+
+.site-footer{
+  background:$bg-color;                
+  border-radius:40px 40px 0 0;        
+  padding:56px 0 40px;                
+}
+
+.site-footer .container{
+  max-width:1504px;
+  margin:0 auto;
+  padding-inline:max(16px, calc((100vw - 1504px)/2));
+}
+
+.news-card{
+  background:$primarycolor;
+  color:$inputcolor;
+  border-radius:20px;
+  padding:24px;
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  gap:24px;
+  box-shadow:0 10px 30px rgba(0,0,0,.06);
+}
+.news-title{
+  margin:0;
+  font:500 24px/32px "Poppins", sans-serif;
+  max-width:560px;
+}
+
+.news-form{
+  display:flex; align-items:center; gap:16px;
+  background:$inputcolor;
+  border:1px solid $neutralcolor;
+  border-radius:16px;
+  padding:10px;
+}
+.news-form input{
+  height:44px; width:360px;
+  border:1px solid $neutralcolor; background:$inputcolor;
+  border-radius:12px; padding:0 14px;
+  font:400 14px/22px "Inter", sans-serif; color:$text-color;
+}
+.news-form input::placeholder{ color:$inputplaceholdercolor; }
+.news-form .btn{
+  height:44px; padding:0 22px;
+  border-radius:12px; border:2px solid $inputcolor;
+  background:$buttoncolor; color:$inputcolor;
+  font:500 14px/44px "Poppins", sans-serif; white-space:nowrap;
+  cursor:pointer;
+}
+
+
+.foot-row{
+  display:flex; align-items:center; justify-content:space-between;
+  margin:24px 0 40px;                 
+}
+.foot-links{ display:flex; gap:48px; list-style:none; padding:0; margin:0; }
+.foot-links a{
+  text-decoration:none; color:$text-color;
+  font:500 16px/24px "Poppins", sans-serif;
+}
+.socials{ display:flex; gap:18px; }
+.socials a{ color:$text-color; font-size:16px; }
+.foot-bottom{
+  border-top:1px solid $btns-color;       
+  padding-top:16px;
+
+  display:grid;
+  grid-template-columns:1fr auto 1fr; 
+  align-items:center; gap:16px;
+}
+.copy{
+  margin:0; color:$cardtextcolor;
+  font:400 14px/22px "Inter", sans-serif;
+}
+.foot-logo{ display:grid; place-items:center; }
+.foot-logo img{ height:36px; display:block; }
+.legal{ display:flex; justify-content:flex-end; gap:18px; }
+.legal a{
+  color:$cardtextcolor; text-decoration:none;
+  font:500 14px/22px "Inter", sans-serif;
+}
+
+
+@media (max-width: 1024px){
+  .news-title{ font-size:22px; line-height:30px; }
+  .news-form input{ width:300px; }
+  .foot-links{ gap:36px; }
+}
+
+@media (max-width: 768px){
+  .site-footer{ padding:48px 0 36px; }
+
+  .news-card{
+    flex-direction:column; align-items:stretch; gap:16px;
+    padding:22px;
+  }
+  .news-form{ flex-direction:column; align-items:stretch; }
+  .news-form input, .news-form .btn{ width:100%; }
+
+  .foot-row{
+    flex-direction:column; gap:16px;
+    align-items:center; text-align:center;
+    margin-bottom:40px;
+  }
+  .foot-links{ gap:28px; flex-wrap:wrap; justify-content:center; }
+
+  .foot-bottom{
+    grid-template-columns:1fr;
+    row-gap:10px; text-align:center;
+  }
+  .legal{ justify-content:center; flex-wrap:wrap; }
+}
+
+@media (max-width: 480px){
+  .news-title{ font-size:20px; line-height:28px; }
+  .news-card{ padding:18px; border-radius:18px; }
+  .foot-links{ gap:18px; }
+  .foot-logo img{ height:32px; }
+}

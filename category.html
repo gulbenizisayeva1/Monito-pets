@@ -1,0 +1,407 @@
+<!DOCTYPE html>
+<html lang="az">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Category</title>
+  <link rel="shortcut icon" href="./assets/icons/pati.svg" type="image/x-icon">
+  <link rel="stylesheet" href="./assets/scss/pages/index.css">
+   <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,233;1,233&display=swap" rel="stylesheet">
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+   
+</head>
+
+
+<body>
+   <header class="site-header">
+     <input id="menu-toggle" type="checkbox" hidden>
+    <div class="container nav">
+      <a class="logo" href="./index.html">
+        <img src="./assets/image/Frame.png" alt="Monito">
+      </a>
+      <button class="search-icon" aria-label="Search">
+      <img src="./assets/icons/search.svg" alt="">
+    </button>
+      <nav class="links">
+        <a href="./index.html">Home</a>
+        <a href="./category.html">Category</a>
+        <a href="./about.html">About</a>
+        <a href="./contact.html">Contact</a>
+      </nav>
+
+      <div class="right">
+        <div class="search">
+          <input type="text" placeholder="Search something here!">
+          <img src="./assets/icons/search.svg" alt="">
+        </div>
+        <button class="join">Join the community</button>
+        <div class="currency">
+          <img src="./assets/icons/star.svg" alt="">
+          <span>VND</span>
+          <img src="./assets/icons/vector.svg" alt="">
+        </div>
+         <label class="burger" for="menu-toggle" aria-label="Open menu">
+          <span></span><span></span><span></span>
+        </label>
+      </div>
+    </div>
+    <nav class="mobile-menu">
+      <a href="./index.html">Home</a>
+      <a href="./category.html">Category</a>
+      <a href="./about.html">About</a>
+      <a href="./contact.html">Contact</a>
+    </nav>
+  </header>
+
+  <section class="hero">
+  <div class="container">
+  <nav class="crumbs" aria-label="Breadcrumb">
+      <a href="#">Home</a>
+      <img src="./assets/image/vektorframe.png" alt="" class="crumb-icon">
+      <a href="#">Dog</a>
+      <img src="./assets/image/vektorframe.png" alt="" class="crumb-icon">
+      <span>Small Dog</span>
+    </nav>
+    <div class="hero-box">
+      <img src="./assets/image/categorygroup.png" alt="Banner" class="hero-bg">
+
+      <div class="hero-content">
+        <h1 class="t1">One More Friend</h1>
+        <h2 class="t2">Thousands More Fun!</h2>
+        <p class="txt">
+          Having a pet means you have more joy, a new friend, a happy person
+          who’ll always be with you to have fun.
+        </p>
+        <div class="btns">
+          <a href="#" class="btn btn-primary">
+            <span>View Intro</span>
+            <img src="./assets/icons/Media/Vector.png" alt="" class="ic">
+          </a>
+          <a href="#" class="btn btn-light">Explore Now</a>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<section class="category">
+  <div class="container">
+    <div class="category-top">
+      <div class="filter-label">Filter</div>
+    <h3 class="section-title">
+        Small Dog <span>52 puppies</span>
+      </h3>
+      <div class="sort">
+        <select aria-label="Sort by">
+          <option>Sort by: Popular</option>
+          <option>Price: Low → High</option>
+          <option>Price: High → Low</option>
+        </select>
+      </div>
+    </div>
+
+    <div class="row">
+     <aside class="filter">
+        <div class="filter-group">
+          <span class="label">Gender</span>
+          <label><input type="checkbox"> <span>Male</span></label>
+          <label><input type="checkbox"> <span>Female</span></label>
+        </div>
+        <div class="filter-group color">
+          <span class="label">Color</span>
+          <label> 
+            <input type="checkbox">
+            <img class="dot-icon" src="./assets/icons/categorycolor/red.svg" alt="">
+            <span>Red</span>
+          </label>
+
+          <label>
+            <input type="checkbox">
+            <img class="dot-icon" src="./assets/icons/categorycolor/orange.svg" alt="">
+            <span>Apricot</span>
+          </label>
+
+          <label>
+            <input type="checkbox">
+            <img class="dot-icon" src="./assets/icons/categorycolor/black.svg" alt="">
+            <span>Black</span>
+          </label>
+
+          <label>
+            <input type="checkbox">
+            <img class="dot-icon" src="./assets/icons/categorycolor/black&white.svg" alt="">
+            <span>Black &amp; White</span>
+          </label>
+
+          <label>
+            <input type="checkbox">
+            <img class="dot-icon" src="./assets/icons/categorycolor/silver.svg" alt="">
+            <span>Silver</span>
+          </label>
+
+          <label>
+            <input type="checkbox">
+            <img class="dot-icon" src="./assets/icons/categorycolor/tan.svg" alt="">
+            <span>Tan</span>
+          </label>
+        </div>
+
+        
+        <div class="filter-group">
+          <span class="label">Price</span>
+          <div class="price-inputs">
+            <input type="number" placeholder="Min" aria-label="Min price">
+            <input type="number" placeholder="Max" aria-label="Max price">
+          </div>
+        </div>
+
+        <div class="filter-group">
+          <span class="label">Breed</span>
+          <label><input type="checkbox"> <span>Small</span></label>
+          <label><input type="checkbox"> <span>Medium</span></label>
+          <label><input type="checkbox"> <span>Large</span></label>
+        </div>
+      </aside>
+
+      <div class="content">
+        <div class="cards">
+          <div class="card">
+            <a href="./about.html" target="_blank"><img src="./assets/image/categorycard/card1.png" alt="MO502 – Poodle Tiny Yellow"></a>
+            <div class="card-body">
+              <div class="info">
+                <h4 class="card-title">MO502 – Poodle Tiny Yellow</h4>
+                <p class="meta">Gender: Female · Age:02 months </p>
+              </div>
+              <div class="price">3.900.000 VND</div>
+            </div>
+          </div>
+
+          <div class="card">
+           <a href="./about.html" target="_blank"> <img src="./assets/image/categorycard/card2.png" alt="MO102 – Poodle Tiny Sepia"></a>
+            <div class="card-body">
+              <div class="info">
+                <h4 class="card-title">MO102 – Poodle Tiny Sepia</h4>
+                <p class="meta">Gender: Male · Age: 02 months</p>
+              </div>
+              <div class="price">4.000.000 VND</div>
+            </div>
+          </div>
+
+          <div class="card">
+            <a href="./about.html" target="_blank"><img src="./assets/image/categorycard/card3.png" alt="MO512 – Alaskan Malamute Grey"></a>
+            <div class="card-body">
+              <div class="info">
+                <h4 class="card-title">MO512 – Alaskan Malamute Grey</h4>
+                <p class="meta">Gender: Male · Age: 02 months</p>
+              </div>
+              <div class="price">8.900.000 VND</div>
+            </div>
+          </div>
+
+          <div class="card">
+            <a href="./about.html" target="_blank"><img src="./assets/image/categorycard/card4.png" alt="MO231 – Corgi Baby"></a>
+            <div class="card-body">
+              <div class="info">
+                <h4 class="card-title">MO231 – Corgi Baby</h4>
+                <p class="meta">Gender: Male · Age: 03 months</p>
+              </div>
+              <div class="price">7.500.000 VND</div>
+            </div>
+          </div>
+
+          <div class="card">
+           <a href="./about.html" target="_blank"> <img src="./assets/image/categorycard/card5.png" alt="MO247 – Pomeranian Cream"></a>
+            <div class="card-body">
+              <div class="info">
+                <h4 class="card-title">MO247 – Pomeranian Cream</h4>
+                <p class="meta">Gender: Female · Age: 03 months</p>
+              </div>
+              <div class="price">9.200.000 VND</div>
+            </div>
+          </div>
+
+          <div class="card">
+            <a href="./about.html" target="_blank"><img src="./assets/image/categorycard/card6.png" alt="MO188 – Husky White"></a>
+            <div class="card-body">
+              <div class="info">
+                <h4 class="card-title">MO188 – Husky White</h4>
+                <p class="meta">Gender: Male · Age: 04 months</p>
+              </div>
+              <div class="price">6.800.000 VND</div>
+            </div>
+          </div>
+
+          <div class="card">
+            <a href="./about.html" target="_blank"><img src="./assets/image/categorycard/card7.png" alt="MO321 – Shiba Inu Sepia"></a>
+            <div class="card-body">
+              <div class="info">
+                <h4 class="card-title">MO321 – Shiba Inu Sepia</h4>
+                <p class="meta">Gender: Female · Age: 03 months</p>
+              </div>
+              <div class="price">10.400.000 VND</div>
+            </div>
+          </div>
+
+          <div class="card">
+            <a href="./about.html" target="_blank"><img src="./assets/image/categorycard/card8.png" alt="MO158 – Beagle Pup"></a>
+            <div class="card-body">
+              <div class="info">
+                <h4 class="card-title">MO158 – Beagle Pup</h4>
+                <p class="meta">Gender: Male · Age: 02 months</p>
+              </div>
+              <div class="price">5.100.000 VND</div>
+            </div>
+          </div>
+
+          <div class="card">
+           <a href="./about.html" target="_blank"> <img src="./assets/image/categorycard/card9.png" alt="MO205 – Poodle Apricot"></a>
+            <div class="card-body">
+              <div class="info">
+                <h4 class="card-title">MO205 – Poodle Apricot</h4>
+                <p class="meta">Gender: Female · Age: 02 months</p>
+              </div>
+              <div class="price">4.600.000 VND</div>
+            </div>
+          </div>
+
+          <div class="card">
+            <a href="./about.html" target="_blank"><img src="./assets/image/categorycard/card10.png" alt="MO411 – French Bulldog Fawn"></a>
+            <div class="card-body">
+              <div class="info">
+                <h4 class="card-title">MO411 – French Bulldog Fawn</h4>
+                <p class="meta">Gender: Male · Age: 03 months</p>
+              </div>
+              <div class="price">12.000.000 VND</div>
+            </div>
+          </div>
+
+          <div class="card">
+           <a href="./about.html" target="_blank"> <img src="./assets/image/categorycard/card11.png" alt="MO276 – Maltese"></a>
+            <div class="card-body">
+              <div class="info">
+                <h4 class="card-title">MO276 – Maltese</h4>
+                <p class="meta">Gender: Female · Age: 02 months</p>
+              </div>
+              <div class="price">6.100.000 VND</div>
+            </div>
+          </div>
+
+          <div class="card">
+            <a href="./about.html" target="_blank"><img src="./assets/image/categorycard/card12.png" alt="MO144 – Pug Fawn"></a>
+            <div class="card-body">
+              <div class="info">
+                <h4 class="card-title">MO144 – Pug Fawn</h4>
+                <p class="meta">Gender: Male · Age: 02 months</p>
+              </div>
+              <div class="price">5.300.000 VND</div>
+            </div>
+          </div>
+
+          <div class="card">
+           <a href="./about.html"
+           target="_blank"> <img src="./assets/image/categorycard/card13.png" alt="MO355 – Cavalier King Charles"></a>
+            <div class="card-body">
+              <div class="info">
+                <h4 class="card-title">MO355 – Cavalier King Charles</h4>
+                <p class="meta">Gender: Female · Age: 03 months</p>
+              </div>
+              <div class="price">9.700.000 VND</div>
+            </div>
+          </div>
+
+          <div class="card">
+            <a href="./about.html" target="_blank"><img src="./assets/image/categorycard/card14.png" alt="MO299 – Samoyed"></a>
+            
+            <div class="card-body">
+              <div class="info">
+                <h4 class="card-title">MO299 – Samoyed</h4>
+                <p class="meta">Gender: Male · Age: 03 months</p>
+              </div>
+              <div class="price">11.500.000 VND</div>
+            </div>
+          </div>
+
+          <div class="card">
+            <a href="./about.html" target="_blank"><img  src="./assets/image/categorycard/card15.png"" alt="MO366 – Yorkshire Terrier"></a>
+            <div class="card-body">
+              <div class="info">
+                <h4 class="card-title">MO366 – Yorkshire Terrier</h4>
+                <p class="meta">Gender: Female · Age: 02 months</p>
+              </div>
+              <div class="price">8.100.000 VND</div>
+            </div>
+          </div>
+        </div>
+    <div class="pagination" aria-label="Pagination">
+          <button class="page-arrow prev" aria-label="Previous page" type="button">
+            <svg width="18" height="18" viewBox="0 0 24 24" aria-hidden="true">
+              <path d="M15 6l-6 6 6 6" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </button>
+
+          <div class="page-numbers">
+            <a href="#" class="active" aria-current="page">1</a>
+            <a href="#">2</a>
+            <a href="#">3</a>
+            <a href="#">4</a>
+            <span>…</span>
+            <a href="#">28</a>
+          </div>
+
+          <button class="page-arrow next" aria-label="Next page" type="button">
+            <svg width="18" height="18" viewBox="0 0 24 24" aria-hidden="true">
+              <path d="M9 6l6 6-6 6" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+   
+  
+  
+<footer class="site-footer">
+  <div class="container">
+    <div class="news-card">
+      <div class="news-left">
+        <h3 class="news-title">Register Now So You Don't Miss Our Programs</h3>
+      </div>
+      <form class="news-form" action="#">
+        <input type="email" placeholder="Enter your Email" required>
+        <button type="submit" class="btn">Subscribe Now</button>
+      </form>
+    </div>
+   <div class="foot-row">
+      <ul class="foot-links">
+        <li><a href="./index.html">Home</a></li>
+        <li><a href="./category.html">Category</a></li>
+        <li><a href="./about.html">About</a></li>
+        <li><a href="./contact.html">Contact</a></li>
+      </ul>
+
+      <div class="socials">
+        <a href="#" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+        <a href="#" aria-label="Twitter"><i class="fa-brands fa-twitter"></i></a>
+        <a href="#" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+        <a href="#" aria-label="YouTube"><i class="fa-brands fa-youtube"></i></a>
+      </div>
+    </div>
+  </div>
+<div class="container foot-bottom">
+    <p class="copy">© 2022 Monito. All rights reserved.</p>
+
+    <div class="foot-logo">
+      <img src="./assets/image/Frame.png" alt="Monito logo">
+    </div>
+
+    <div class="legal">
+      <a href="#">Terms of Service</a>
+      <a href="#">Privacy Policy</a>
+    </div>
+  </div>
+</footer>
+</body>
+</html>
+
