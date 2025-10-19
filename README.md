@@ -1,5 +1,6 @@
 🐾 Monito Pets
 A responsive pet adoption website built to practice front-end development.
+
 🛠 Tech Stack
 - HTML5  
 - SCSS / CSS3  
